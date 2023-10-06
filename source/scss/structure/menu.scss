@@ -1,0 +1,72 @@
+.menuOur {
+
+    background-image: url(../img/bgMenu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 226px;
+
+    .titleMenu {
+        color: #fff;
+        text-align: center;
+        font-size: 54px;
+        font-family: 'Tinos', serif;
+        box-shadow: 5px 5px 4px 0px #00000040;
+        padding-top: 100px;
+        padding-bottom: 138px;
+    }
+
+    .menuItems {
+        display: flex;
+        justify-content: center;
+        .menuItem {
+            padding: 0 63px;
+            padding-top: 80px;
+            padding-bottom: 20px;
+            background: #fff;
+            text-align: center;
+            margin-left: 30px;
+            
+            .menuImage {
+                img {
+                    border-radius: 50%;
+                }
+
+                .priceSettings {
+                    margin-left: -90px;
+
+                    .textPrice {
+                        margin-left: 135px;
+                        margin-top: -70px;
+                        margin-bottom: 55px;
+                        font-size: 30px;
+                        color: #fff;
+                        font-family: 'Cookie', cursive;
+                    }
+                }
+            }
+
+            .menuText {
+                font-size: 26px;
+                font-family: 'Tinos', serif;
+                margin: 20px 0;
+            }
+            .menuSubtext {
+                font-size: 16px;
+                font-family: 'Open Sans', serif;
+                padding-bottom: 25px;
+            }
+        }
+        
+        .menuBtn {
+            @include link($colorHT, none, 16px, 700, #924201) {
+                background: #FF7400;
+                text-transform: uppercase;
+                padding: 14px 68px;
+    
+                &:hover {
+                    background-color: #ff8b2b;
+                }
+            }
+        }
+    }
+}

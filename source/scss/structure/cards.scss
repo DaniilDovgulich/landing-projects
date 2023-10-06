@@ -1,0 +1,44 @@
+.cards {
+
+	.container {
+		display: flex;
+		justify-content: center;
+	}
+	
+	margin-bottom: 150px;
+}
+
+.card {
+	text-align: center;
+	box-shadow: 10px 10px 40px 20px #0000001A;
+	width: 349px;
+	margin-left: 31px;
+	background: #fff;
+	margin-top: -7%;
+
+		.cardImg {
+			margin-top: 48px;
+		}
+
+		.cardTitle {
+			font-size: 26px;
+			font-weight: 400;
+			color: #2C2C2C;
+			font-family: 'Tinos', serif;
+			margin-top: 4%;
+
+			span {
+				color: #BC9060;
+			}
+		}
+
+		.cardDesc {
+			color: #656363;
+			font-size: 26px;
+			font-family: 'Tinos', serif;
+			margin-top: 4%;
+			padding-bottom: 5%;
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+}

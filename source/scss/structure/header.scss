@@ -1,0 +1,132 @@
+.container {
+    margin: 0px 166px;
+}
+
+header {
+	background-image: url(../img/backgroundHeader.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+
+	.headerLine {
+		display: flex;
+		align-items: center;
+		padding-top: 50px;
+		justify-content: center;
+	}
+	.nav {
+		margin-left: 20%;
+		margin-right: 2%;
+		@include link($colorHT, none, 14px, 700) {
+			text-transform: uppercase;
+			margin-right: 25px;
+		}
+	}
+	
+	.cart {
+		position: relative;
+		border-right: 1px solid #ffffff;
+		padding-right: 10px;
+		height: 50px;
+
+		.cartImg {
+			position: absolute;
+			top: 18px;
+			right: 17px;
+		}
+	}
+
+	.phone	{
+
+		margin-left: 3%;
+		margin-right: 3.3%;
+
+		.phoneHolder {
+			display: flex;
+		}
+
+		.phoneImg {
+			padding-right: 10px;
+		}
+
+		@include link($colorHT, none, 18px, 700);
+		> .phoneText {
+			color: $colorHT;
+			font-size: 14px;
+			font-weight: 400;
+		}
+	}
+	.btn {
+
+		@include link($colorHT, none, 14px, 700, #924201) {
+			background: #FF7400;
+			text-transform: uppercase;
+			padding: 14px 17px;
+
+			&:hover {
+				background-color: #ff8b2b;
+			}
+		}
+	}
+
+    .headerDown {
+
+        position: relative;
+        margin-top: 220px;
+        margin-left: 33px;
+
+        .headerTitle {
+            position: absolute;
+            left: 0;
+            text-align: center;
+            color: #D67E35;
+            font-family: 'Tinos', serif;
+            font-size: 50px;
+            font-weight: 400;
+        }
+
+        .headerSubtitle {
+            font-size: 80px;
+            font-family: 'Tinos', serif;
+        }
+
+        .headerSuptitle {
+            position: relative;
+            color: #ffffff;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            &:after {
+                position: absolute;
+                content: '';
+                height: 2px;
+                width: 61px;
+                background: #fff;
+                top: 50%;
+                left: 72%;
+            }
+
+            &:before {
+                position: absolute;
+                content: '';
+                height: 2px;
+                width: 61px;
+                background: #fff;
+                top: 50%;
+                left: 15%;
+            }
+        }
+
+        @include link($colorHT, none, 14px, 700, #924201) {
+			background: #FF7400;
+			text-transform: uppercase;
+			padding: 14px 28px;
+            font-family: 'Open Sans', sans-serif;
+
+			&:hover {
+				background-color: #ff8b2b;
+			}
+		}
+    }
+}

@@ -1,0 +1,18 @@
+@mixin link($color: $colorHT, $decor: none, $fontSZ: 16px, $fontW: 100,  $hoverColor: $colorLinkH, $hover: "yes") {
+	a {
+		color: $color;
+		text-decoration: $decor;
+		font-size: $fontSZ;
+		font-weight: $fontW;
+		transition: color 0.2s linear;
+
+
+		@if($hover != "none") {
+			&:hover {
+				color: $hoverColor;
+			}
+		}
+
+		@content;
+	}
+}

@@ -1,0 +1,45 @@
+.priceDo {
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 130px;
+
+	.container {
+		display: flex;
+		justify-content: center;
+		padding-top: 80px;
+		align-items: center;
+	}
+
+	.firstMenu {
+		margin-right: 350px;
+		padding-bottom: 104px;
+	}
+
+	.priceTitle {
+		color: #D67E34;
+		font-family: 'Tinos', serif;
+		font-size: 52px;
+		font-weight: 400;
+	}
+
+	.priceSup {
+		color: #fff;
+		padding-top: 15px;
+		font-size: 24px;
+		font-weight: 700;
+	}
+
+	.btnStol {
+		
+		@include link($colorHT, none, 14px, 700, #924201) {
+			background: #FF7400;
+			text-transform: uppercase;
+			padding: 14px 17px;
+
+			&:hover {
+				background-color: #ff8b2b;
+			}
+		}
+	}
+}

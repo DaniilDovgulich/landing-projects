@@ -1,0 +1,41 @@
+.bludo {
+
+    text-align: center;
+
+    .bludoTitle {
+        font-size: 54px;
+        font-family: 'Tinos', serif;
+        color: #000;
+
+        span {
+            color: #D67E34;
+        }
+    }
+
+    .bludoList {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+		margin: 150px 0;
+
+		.firstList {
+			margin-right: 30px;
+		}
+
+		.twoList {
+			div:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+
+		.threeList {
+			margin-left: 30px;
+			font-size: 26px;
+			font-family: 'Tinos', serif;
+			color: #000;
+			div:not(:last-child) {
+				margin-bottom: 134px;
+			}
+		}
+	}
+}
